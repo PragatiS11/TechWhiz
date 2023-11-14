@@ -160,7 +160,7 @@ app.post("/interview", async (req, res) => {
   const userResponse = req.body.userResponse;
 
   try {
-    // Check if the interview has started
+    
     if (!interviewStarted) {
       // If not started, check if the user response is "start the interview"
       if (userResponse.toLowerCase() === "start the interview") {
