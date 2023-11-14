@@ -192,7 +192,7 @@ app.post("/interview", async (req, res) => {
     // Add assistant response to chat history
     chatHistory.push({ role: "assistant", content: interviewerResponse });
 
-    // Send interviewer response to the client
+  
     res.json({ interviewerResponse });
 
     // Check if the interview should stop
